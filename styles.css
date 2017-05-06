@@ -35,7 +35,7 @@ h3    {
       width: 430px;
       background-position: center;
       text-align: center;
-      position: sticky;
+      position: relative;
       font-size: 30;
       margin-top: 75%;
       }
