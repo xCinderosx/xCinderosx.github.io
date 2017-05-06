@@ -8,27 +8,36 @@ body {
       background-repeat: repeat-x;
       position: absolute;
      }
-
+.menu
+           {
+             position: relative;
+              /*width: 100%; XXX: IE6 */
+           }
 h1    {
-      width: 400px;
+      width: 430px;
       background-position: center;
       text-align: center;
+      position: absolute;
       font-size: 30;
-      margin-top: 33%;
+      margin-top: 45%;
       }
 
 h2    {
-      width: 400px;
+      width: 430px;
       background-position: center;
       text-align: center;
+      position: absolute;
       font-size: 30;
+      margin-top: 60%;
       }
 
 h3    {
-      width: 400px;
+      width: 430px;
       background-position: center;
       text-align: center;
+      position: sticky;
       font-size: 30;
+      margin-top: 75%;
       }
 h1:hover, h2:hover, h3:hover
       {
@@ -36,12 +45,15 @@ h1:hover, h2:hover, h3:hover
       }
 figure
       {
-        height:500px;
-        width: 300px;
+        height:300px;
+        width: 350px;
         background-color: black;
         opacity: 0.2;
+        position: absolute;
+        border-style: solid;
         margin-top: 33%;
       }
+
 
 @keyframes Opaque
   {
