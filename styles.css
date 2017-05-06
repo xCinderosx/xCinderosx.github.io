@@ -1,0 +1,50 @@
+
+body {
+      width: auto ;
+      height: auto;
+      background-image: url("tlo1.jpg");
+      background-size: cover;
+      background-position: fixed;
+      background-repeat: repeat-x;
+      position: absolute;
+     }
+
+h1    {
+      width: 400px;
+      background-position: center;
+      text-align: center;
+      font-size: 30;
+      margin-top: 33%;
+      }
+
+h2    {
+      width: 400px;
+      background-position: center;
+      text-align: center;
+      font-size: 30;
+      }
+
+h3    {
+      width: 400px;
+      background-position: center;
+      text-align: center;
+      font-size: 30;
+      }
+h1:hover, h2:hover, h3:hover
+      {
+        color: rgba(0, 0, 0, 0.5);
+      }
+figure
+      {
+        height:500px;
+        width: 300px;
+        background-color: black;
+        opacity: 0.2;
+        margin-top: 33%;
+      }
+
+@keyframes Opaque
+  {
+    0% {opacity: 0f}
+    100% {opacity: 1f}
+  }
