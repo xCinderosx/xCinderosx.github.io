@@ -188,7 +188,7 @@ div8
   top: 50%;
   left: 50%;
   transition: height 2s;
-
+  text-align: center;
 }
 div8:hover{
   top: 50px;
