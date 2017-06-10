@@ -4,16 +4,64 @@
   <link rel="stylesheet" href="styles.css" type="text/css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
+
 <body>
+  <div1 id="topmenu">
 
-    <div class='menu'>
-        <figure></figure>
-        <h1>My First Heading</h1></br>
+          <div3 id='home'><div5 >Home</div5>
+          </div3>
 
-        <h2>My Second Heading</h2></br>
+          <div4 id='gallery'; onclick="location.href='gallery.html'"><div5>Gallery</div5>
+          </div4>
 
-        <h3>Next Heading</h3></br>
+          <div6 id='acc'><div5>Account</div5>
+          </div6>
 
-    </div>
+
+  </div1>
+  <div8></div8>
+      <div7>
+          Przemysław Kasprzak CDV
+      </div7>
 </body>
+<script>
+function menudrop()
+{
+div1.animation:menuDropAnim;
+}
+function menuhide()
+{
+div1.animation:menuHideAnim;
+}
+
+function fadeout(elem) {
+  //alert ('a');
+        elem.style.display='none';
+        elem.style.animation-play;
+}
+function fadein(elem) {
+  //alert ('b');
+        elem.style.display = 'block';
+}
+function Fadeexample1IN() {
+    //alert('1')
+    fadeout(daBox2);
+    fadeout(daBox3);
+    fadein(daBox1);
+}
+function Fadeexample2IN() {
+    //alert('2')
+    fadeout(daBox1);
+    fadeout(daBox3);
+    fadein(daBox2);
+}
+function Fadeexample3IN() {
+    //alert('3')
+    fadeout(daBox1);
+    fadeout(daBox2);
+    fadein(daBox3);
+}
+w3.includeHTML();
+</script>
+
 </html>
