@@ -179,20 +179,52 @@ div7
   text-align: center;
   bottom: 0;
 }
-div8
+
+
+.div8
 {
-  width: 100px;
-  height: 100px;
+  border-radius: 50%;
   position: fixed;
-  background-color: blue;
-  top: 50%;
-  left: 50%;
-  transition: height 2s;
+  top: 25%;
+  transition: height 1s, width 1s, top 1s, left 1s, font-size 0.5s, animation-play-state 0s;
   text-align: center;
+  font-family: "Verdana", Times, sans-serif;
+  font-weight: bold;
+  font-size: 35;
 }
-div8:hover{
-  top: 50px;
+.type1 {
+    left: 20%;
+    width: 300px;
+    height: 300px;
+    background: yellow;
+    border: 3px solid #000;
 }
+.type2 {
+    left: 60%;
+    width: 300px;
+    height: 300px;
+    background: #ccc;
+    border: 3px solid #000;
+}
+.type1:hover{
+  height: 450px;
+  width: 450px;
+  top: 12%;
+  left: 20%;
+  font-size: 18;
+  text-shadow: 2px 2px rgba(255,255,255,0.9);;
+  animation-play-state: running;
+}
+.type2:hover{
+  height: 450px;
+  width: 450px;
+  top: 12%;
+  left: 50%;
+  font-size: 18;
+  text-shadow: 2px 2px rgba(255,255,255,0.9);;
+  animation-play-state: running;
+}
+
 example1
 {
   height: 300px;
