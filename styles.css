@@ -313,6 +313,56 @@ example3
     100% {transform: translate(0,0);}
 }
 
+@media only screen and (max-width: 950px)
+{
+    body
+    {
+        background-clip: padding-box;
+    }
+
+    div4
+    {
+        left: 15vw;
+    }
+    div3
+    {
+        left: 30vw;
+    }
+    div6
+    {
+        left: 45vw;
+    }
+    div5
+    {
+        -webkit-animation-name: DropUp;
+    }
+
+    div5:hover
+    {
+
+        -webkit-animation-name: DropDown;
+    }
+
+    div.LeftMenu
+    {
+        width: 100px;
+        min-height: 100vmax;
+    }
+
+    div1
+    {
+        left: 100px;
+        top: 0;
+    }
+
+    h1
+    {
+        font-size: 26px;
+    }
+
+}
+
+
 @media only screen, (orientation: landscape)
 {
     div.LeftMenu
@@ -321,7 +371,7 @@ example3
     }
 }
 
-@media only screen and (max-device-width: 950px), (max-width: 950px), (orientation: portrait) {
+@media only screen and (max-device-width: 950px) and (orientation: portrait) {
 
     p
     {
