@@ -1,4 +1,5 @@
 
+
 body {
       background-image: url("tlo1.jpg");
       background-size: 100vm;
@@ -45,7 +46,8 @@ h1:hover, h2:hover, h3:hover
       }
 div1
 {
-        height:50px;
+        height: 10vh;
+        min-height: 50px;
         width: 100%;
         left: 150px;
         background-color: rgba(50, 50, 50, 0.8);
@@ -183,7 +185,8 @@ div.a
 div.LeftMenu
 {
     Color: white;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background-color: RGBA(50, 50, 50, 0.8);
     width: 150px;
     text-orientation: sideways;
@@ -234,51 +237,7 @@ div.LeftMenu
   animation-play-state: running;
 }
 
-@media only screen and (max-width: 950px) {
-    body
-    {
-        background-color: lightblue;
-    }
 
-    div4
-    {
-        left: 15vw;
-    }
-    div3
-    {
-        left: 30vw;
-    }
-    div6
-    {
-        left: 45vw;
-    }
-    div5
-    {
-        -webkit-animation-name: DropUp;
-    }
-
-    div5:hover
-    {
-
-        -webkit-animation-name: DropDown;
-    }
-
-    div.LeftMenu
-    {
-        width: 100px;
-    }
-
-    div1
-    {
-        left: 100px;
-    }
-
-    h1
-    {
-        font-size: 26px;
-    }
-
-}
 
 example1
 {
@@ -349,4 +308,51 @@ example3
 {
     0% {transform: translate(0,-49px);}
     100% {transform: translate(0,0);}
+}
+
+@media only screen and (max-width: 950px) {
+
+    body
+    {
+        background-clip: padding-box;
+    }
+
+    div4
+    {
+        left: 15vw;
+    }
+    div3
+    {
+        left: 30vw;
+    }
+    div6
+    {
+        left: 45vw;
+    }
+    div5
+    {
+        -webkit-animation-name: DropUp;
+    }
+
+    div5:hover
+    {
+
+        -webkit-animation-name: DropDown;
+    }
+
+    div.LeftMenu
+    {
+        width: 100px;
+    }
+
+    div1
+    {
+        left: 100px;
+    }
+
+    h1
+    {
+        font-size: 26px;
+    }
+
 }
