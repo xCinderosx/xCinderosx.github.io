@@ -310,7 +310,7 @@ example3
     100% {transform: translate(0,0);}
 }
 
-@media only screen and (max-device-width: 950px), (max-width: 950px) {
+@media only screen and (max-device-width: 4000px), (max-width: 950px), (d) {
 
     body
     {
@@ -343,7 +343,7 @@ example3
     div.LeftMenu
     {
         width: 100px;
-        min-height: inherit;
+        min-height: fit-content;
     }
 
     div1
