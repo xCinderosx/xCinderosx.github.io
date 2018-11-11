@@ -14,6 +14,10 @@ body {
   background-color: grey;
   background-size: 0;
 }
+p
+{
+    font-size: 16px;
+}
 h1    {
       width: auto;
       font-size: 40px;
@@ -319,6 +323,10 @@ example3
 
 @media only screen and (max-device-width: 950px), (max-width: 950px), (orientation: portrait) {
 
+    p
+    {
+        font-size: 24px;
+    }
     body
     {
         background-clip: padding-box;
