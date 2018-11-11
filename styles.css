@@ -1,8 +1,8 @@
 
 body {
       background-image: url("tlo1.jpg");
-      background-size: cover;
-      background-repeat: repeat-x;
+      background-size: 100vm;
+      background-repeat: repeat-y;
       position: absolute;
       margin: 0;
      }
@@ -16,7 +16,7 @@ body {
 }
 h1    {
       width: auto;
-      font-size: 30px;
+      font-size: 40px;
       font-family: "Verdana", Times, sans-serif;
       font-weight: normal;
       }
@@ -46,6 +46,7 @@ div1
 {
         height:50px;
         width: 100%;
+        left: 150px;
         background-color: rgba(50, 50, 50, 0.8);
         position:fixed;
         border-style: none;
@@ -86,7 +87,7 @@ div3
         background-position: top;
         background-repeat: no-repeat;
         background-size: 70%;
-        left: 50vw;
+        left: 40vw;
       }
 div3:hover
 { background-color: white;
@@ -100,7 +101,7 @@ div4
         background-position: top;
         background-repeat: no-repeat;
         background-size: 70%;
-        left: 25vw;
+        left: 20vw;
       }
 div4:hover
 { background-color: white;
@@ -143,7 +144,7 @@ div6
         width: 50px;
         background-image: url("account.png");
         position: absolute;
-        margin-left: 75vw;
+        left: 60vw;
         background-position: top;
         background-repeat: no-repeat;
         background-size: 70%;
@@ -159,7 +160,7 @@ div7
   font-family: "Verdana", Times, sans-serif;
   font-weight: normal;
   font-size: 10px;
-  background-color: rgba(100, 100, 100, 0.9);
+  background-color: rgba(100, 100, 100, 1);
   position:fixed;
   border-style: none;
   background-repeat: repeat-x;
@@ -177,20 +178,44 @@ div.a
     text-align: center;
     background-color: RGBA(1, 1, 1, 0.2);
 }
-@media only screen and (max-width: 600px) {
-    body {
+@media only screen and (max-width: 950px) {
+    body
+    {
         background-color: lightblue;
+    }
+
+    div4
+    {
+        left: 15vw;
+    }
+    div3
+    {
+        left: 30vw;
+    }
+    div6
+    {
+        left: 45vw;
+    }
+    div5
+    {
+        -webkit-animation-name: DropUp;
+    }
+
+    div5:hover
+    {
+
+        -webkit-animation-name: DropDown;
     }
 }
 
 div.LeftMenu
 {
-    height: 91vh;
-    border: solid;
-    border-color: blue;
-    margin-top: 50px;
-    width: 30vw;
-    min-width: 100px;
+    Color: white;
+    height: 100vh;
+    background-color: RGBA(50, 50, 50, 0.8);
+    width: 150px;
+    text-orientation: sideways;
+    text-align: center;
 }
 
 .div8
@@ -286,6 +311,16 @@ example3
 {
   0% {transform: translate(50px,0);}
   100% {transform: translate(0,0);}
+}
+@keyframes DropDown
+{
+    0% {transform: translate(0,0);}
+    100% {transform: translate(0,15px);}
+}
+@keyframes DropUp
+{
+    0% {transform: translate(0,15px);}
+    100% {transform: translate(0,0);}
 }
 @keyframes menuHideAnim
 {
