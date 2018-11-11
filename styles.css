@@ -186,10 +186,10 @@ div.LeftMenu
 {
     Color: white;
     height: 100%;
-    min-height: 100vh;
+    min-height: 100vmin;
     background-color: RGBA(50, 50, 50, 0.8);
     width: 150px;
-    text-orientation: sideways;
+    text-orientation: upright;
     text-align: center;
 }
 
