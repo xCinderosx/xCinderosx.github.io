@@ -2,8 +2,7 @@
 
 body {
       background-image: url("tlo1.jpg");
-      background-size: 100vm;
-      background-repeat: repeat-y;
+      background-size: auto;
       position: absolute;
       margin: 0;
      }
@@ -310,7 +309,15 @@ example3
     100% {transform: translate(0,0);}
 }
 
-@media only screen and (max-device-width: 4000px), (max-width: 950px), (d) {
+@media only screen, (orientation: landscape)
+{
+    div.LeftMenu
+    {
+        min-height: 100vmin;
+    }
+}
+
+@media only screen and (max-device-width: 950px), (max-width: 950px), (orientation: portrait) {
 
     body
     {
@@ -343,7 +350,7 @@ example3
     div.LeftMenu
     {
         width: 100px;
-        min-height: fit-content;
+        min-height: 100vmax;
     }
 
     div1
@@ -358,3 +365,4 @@ example3
     }
 
 }
+
