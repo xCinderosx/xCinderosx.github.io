@@ -46,7 +46,7 @@ h1:hover, h2:hover, h3:hover
       }
 div1
 {
-        height: 10vh;
+        height: 50px;
         min-height: 50px;
         width: 100%;
         left: 150px;
@@ -310,7 +310,7 @@ example3
     100% {transform: translate(0,0);}
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-device-width: 950px), (max-width: 950px) {
 
     body
     {
@@ -343,11 +343,13 @@ example3
     div.LeftMenu
     {
         width: 100px;
+        min-height: inherit;
     }
 
     div1
     {
         left: 100px;
+        top: 0;
     }
 
     h1
