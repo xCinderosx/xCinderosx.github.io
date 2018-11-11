@@ -1,26 +1,22 @@
 
 body {
-      width: auto ;
-      height: auto;
       background-image: url("tlo1.jpg");
       background-size: cover;
-      background-position: fixed;
       background-repeat: repeat-x;
       position: absolute;
       margin: 0;
      }
-toplane {
+.topmenu {
   width: 100%;
   height: 100%;
   color: lightgrey;
   position: absolute;
   background-color: grey;
-  background-size:
+  background-size: 0;
 }
 h1    {
-      height: bottom;
       width: auto;
-      font-size: 30;
+      font-size: 30px;
       font-family: "Verdana", Times, sans-serif;
       font-weight: normal;
       }
@@ -28,7 +24,7 @@ h1    {
 h2    {
       height: auto;
       width: auto;
-      font-size: 30;
+      font-size: 30px;
       font-family: "Verdana", Times, sans-serif;
       font-weight: normal;
       }
@@ -36,7 +32,7 @@ h2    {
 h3    {
       height: auto;
       width: auto;
-      font-size: 30;
+      font-size: 30px;
       font-family: "Verdana", Times, sans-serif;
       font-weight: normal;
       }
@@ -48,14 +44,13 @@ h1:hover, h2:hover, h3:hover
       }
 div1
 {
-        height:50;
+        height:50px;
         width: 100%;
         background-color: rgba(50, 50, 50, 0.8);
         position:fixed;
         border-style: none;
         background-repeat: repeat-x;
         -webkit-align-content: center;
-        align-content: inherit;
         transition: top 1s;
         top: -33px;
         /*
@@ -69,12 +64,7 @@ div1
       }
 div1:hover
 {
-    top: 0px;
-    /*-webkit-animation-name: menuDropAnim;
-    -webkit-animation-duration: 1s;
-    animation-play-state: running;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: both;*/
+    top: 0;
 }
 div2
 {
@@ -83,34 +73,34 @@ div2
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
         border-style: solid;
-        top: 110;
+        top: 110px;
         left: 0;
       }
 div3
 {
-        height: 50;
-        width: 50;
+        height: 50px;
+        width: 50px;
         font-weight: normal;
         background-image: url("Home.png");
         position: absolute;
         background-position: top;
         background-repeat: no-repeat;
         background-size: 70%;
-        left: 50%;
+        left: 50vw;
       }
 div3:hover
 { background-color: white;
       }
 div4
 {
-        height: 50;
-        width: 50;
+        height: 50px;
+        width: 50px;
         background-image: url("Brush.png");
         position: absolute;
         background-position: top;
         background-repeat: no-repeat;
         background-size: 70%;
-        left: 25%;
+        left: 25vw;
       }
 div4:hover
 { background-color: white;
@@ -120,20 +110,19 @@ div5
 {
   font-family: "Verdana", Times, sans-serif;
   font-weight: normal;
-  font-size: 10;
-  width: 50;
+  font-size: 10px;
+  width: 50px;
   height: auto;
   cursor:default;
   position: inherit;
-  top:35;
+  top:35px;
   left: 0;
+    color: white;
   -webkit-animation-name: DropLeft;
   -webkit-animation-duration: 0.7s;
   text-align: center;
-  /*animation-delay: 1;*/
   -webkit-animation-play-state: running ;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: 1;
 
   -webkit-animation-fill-mode: both;
   background-color: rgba(50, 50, 50, 0.8);
@@ -141,20 +130,20 @@ div5
 div5:hover
 {
 
-          -webkit-animation-name: DropRight;
-          -webkit-animation-fill-mode: both;
-          -webkit-animation-iteration-count: 1;
-          -webkit-animation-play-state: running ;
-
-          background-color: rgba(255, 255, 255, 0.8);
-          }
+    -webkit-animation-name: DropRight;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-play-state: running ;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 div6
 {
-        height: 50;
-        width: 50;
+        height: 50px;
+        width: 50px;
         background-image: url("account.png");
         position: absolute;
-        margin-left: 75%;
+        margin-left: 75vw;
         background-position: top;
         background-repeat: no-repeat;
         background-size: 70%;
@@ -165,11 +154,11 @@ div6:hover
       }
 div7
 {
-  height:15;
+  height:15px;
   width: 100%;
   font-family: "Verdana", Times, sans-serif;
   font-weight: normal;
-  font-size: 10;
+  font-size: 10px;
   background-color: rgba(100, 100, 100, 0.9);
   position:fixed;
   border-style: none;
@@ -180,6 +169,29 @@ div7
   bottom: 0;
 }
 
+div.a
+{
+    height: 100%;
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: RGBA(1, 1, 1, 0.2);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+div.LeftMenu
+{
+    height: 91vh;
+    border: solid;
+    border-color: blue;
+    margin-top: 50px;
+    width: 30vw;
+    min-width: 100px;
+}
 
 .div8
 {
@@ -190,18 +202,18 @@ div7
   text-align: center;
   font-family: "Verdana", Times, sans-serif;
   font-weight: bold;
-  font-size: 35;
+  font-size: 35px;
 }
 .type1 {
     left: 20%;
-    width: 300px;
-    height: 300px;
+    width: 33%;
+    height: 60%;
     background: yellow;
     border: 3px solid #000;
 }
 .type2 {
-    left: 60%;
-    width: 300px;
+    right: 20%;
+    width: 33%;
     height: 300px;
     background: #ccc;
     border: 3px solid #000;
@@ -211,7 +223,7 @@ div7
   width: 450px;
   top: 12%;
   left: 20%;
-  font-size: 18;
+  font-size: 18px;
   text-shadow: 2px 2px rgba(255,255,255,0.9);;
   animation-play-state: running;
 }
@@ -220,7 +232,7 @@ div7
   width: 450px;
   top: 12%;
   left: 50%;
-  font-size: 18;
+  font-size: 18px;
   text-shadow: 2px 2px rgba(255,255,255,0.9);;
   animation-play-state: running;
 }
