@@ -19,6 +19,7 @@ h1    {
       font-size: 40px;
       font-family: "Verdana", Times, sans-serif;
       font-weight: normal;
+      background-color: grey;
       }
 
 h2    {
@@ -178,35 +179,6 @@ div.a
     text-align: center;
     background-color: RGBA(1, 1, 1, 0.2);
 }
-@media only screen and (max-width: 950px) {
-    body
-    {
-        background-color: lightblue;
-    }
-
-    div4
-    {
-        left: 15vw;
-    }
-    div3
-    {
-        left: 30vw;
-    }
-    div6
-    {
-        left: 45vw;
-    }
-    div5
-    {
-        -webkit-animation-name: DropUp;
-    }
-
-    div5:hover
-    {
-
-        -webkit-animation-name: DropDown;
-    }
-}
 
 div.LeftMenu
 {
@@ -260,6 +232,52 @@ div.LeftMenu
   font-size: 18px;
   text-shadow: 2px 2px rgba(255,255,255,0.9);;
   animation-play-state: running;
+}
+
+@media only screen and (max-width: 950px) {
+    body
+    {
+        background-color: lightblue;
+    }
+
+    div4
+    {
+        left: 15vw;
+    }
+    div3
+    {
+        left: 30vw;
+    }
+    div6
+    {
+        left: 45vw;
+    }
+    div5
+    {
+        -webkit-animation-name: DropUp;
+    }
+
+    div5:hover
+    {
+
+        -webkit-animation-name: DropDown;
+    }
+
+    div.LeftMenu
+    {
+        width: 100px;
+    }
+
+    div1
+    {
+        left: 100px;
+    }
+
+    h1
+    {
+        font-size: 26px;
+    }
+
 }
 
 example1
