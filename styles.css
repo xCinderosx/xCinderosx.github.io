@@ -334,15 +334,15 @@ example3
 
     div4
     {
-        left: 15vw;
+        left: 5vw;
     }
     div3
     {
-        left: 30vw;
+        left: 20vw;
     }
     div6
     {
-        left: 45vw;
+        left: 35vw;
     }
     div5
     {
@@ -357,13 +357,13 @@ example3
 
     div.LeftMenu
     {
-        width: 100px;
+        width: 400px;
         min-height: 100vmax;
     }
 
     div1
     {
-        left: 100px;
+        left: 400px;
         top: 0;
     }
 
