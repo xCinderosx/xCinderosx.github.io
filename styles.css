@@ -346,7 +346,8 @@ example3
     div.LeftMenu
     {
         width: 100px;
-        min-height: 100vmax;
+        height: 100vh;
+        min-height: available;
     }
 
     div1
@@ -367,11 +368,11 @@ example3
 {
     div.LeftMenu
     {
-        min-height: 100vmin;
+        min-height: 100vw;
     }
 }
 
-@media only screen and (max-device-width: 950px) and (orientation: portrait) {
+@media only screen and (max-device-width: 950px), (orientation: portrait) {
 
     p
     {
@@ -407,13 +408,13 @@ example3
 
     div.LeftMenu
     {
-        width: 400px;
-        min-height: 100vmax;
+        width: 320px;
+        min-height: fit-content;
     }
 
     div1
     {
-        left: 400px;
+        left: 320px;
         top: 0;
     }
 
