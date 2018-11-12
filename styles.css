@@ -372,7 +372,7 @@ example3
     }
 }
 
-@media only screen and (max-device-width: 950px), (orientation: portrait) {
+@media only screen and (max-device-width: 950px)and (orientation: portrait) {
 
     p
     {
