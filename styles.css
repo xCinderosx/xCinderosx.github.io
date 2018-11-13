@@ -241,14 +241,14 @@ h1:hover, h2:hover, h3:hover {
     left: 250px;
     overflow: scroll;
     width: 65vw;
-    height: 90vh;
+    height: 88vh;
 
 }
 
 .GalleryCard {
     height: 25vh;
     padding-left: 2.5vw;
-    margin-bottom: 7.5vh;
+    margin-bottom: 10vh;
     width: 60vw;
 }
 
@@ -412,8 +412,12 @@ h1:hover, h2:hover, h3:hover {
         top: 0;
     }
 
-    h1 {
-        font-size: 26px;
+    .GalleryContent {
+        left: 150px;
+    }
+
+    .display-4 {
+        font-size: 2rem;
     }
 
 }
@@ -428,7 +432,7 @@ h1:hover, h2:hover, h3:hover {
 
 /*region Mobile*/
 
-@media only screen and (max-device-width: 950px) and (orientation: landscape) {
+@media only screen and (max-device-width: 1280px) and (orientation: landscape) {
     .MainAnchor {
         min-height: 100vw;
     }
