@@ -507,7 +507,7 @@ h1:hover, h2:hover, h3:hover {
 @media all and (max-device-width: 950px) and (orientation: portrait) {
 
     p {
-        font-size: 24px;
+        font-size: 12px;
     }
 
     body {
