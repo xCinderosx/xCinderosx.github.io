@@ -113,10 +113,10 @@ h1:hover, h2:hover, h3:hover {
     height: 50px;
     width: 50px;
     font-weight: normal;
-    position: absolute;
+    position: relative;
     background: url("Home.png") no-repeat top;
     background-size: 70%;
-    left: 40vw;
+    left: 38.7vw;
 }
 
 .div3:hover {
@@ -126,10 +126,11 @@ h1:hover, h2:hover, h3:hover {
 .div4 {
     height: 50px;
     width: 50px;
-    position: absolute;
+    position: relative;
     background: url("Brush.png") no-repeat top;
     background-size: 70%;
-    left: 20vw;
+    top:-50px;
+    left: 18.7vw;
 }
 
 .div4:hover {
@@ -175,8 +176,9 @@ h1:hover, h2:hover, h3:hover {
 .div6 {
     height: 50px;
     width: 50px;
-    position: absolute;
-    left: 60vw;
+    position: relative;
+    left: 58.7vw;
+    top:-100px;
     background: url("account.png") no-repeat top;
     background-size: 70%;
 }
@@ -380,7 +382,7 @@ h1:hover, h2:hover, h3:hover {
 
 /*region Media selector*/
 
-/*region Desktop*/
+/*region Main*/
 
 
 @media only screen and (max-width: 550px) {
@@ -393,6 +395,17 @@ h1:hover, h2:hover, h3:hover {
         font-size: 22px;
     }
 
+    .div4 {
+        left: 18.5vw;
+    }
+
+    .div3 {
+        left: 43.5vw;
+    }
+
+    .div6 {
+        left: 68.5vw;
+    }
     .div5:hover {
         width: 50px;
         padding-left: 0;
@@ -448,20 +461,19 @@ h1:hover, h2:hover, h3:hover {
         font-size: 1.2em;
     }
 
-    .ContentNavigation {
-        right: -200px;
-    }
-
     .div4 {
-        left: 15vw;
+        left: 16.6vw;
     }
 
     .div3 {
-        left: 30vw;
+        left: 36.6vw;
     }
 
     .div6 {
-        left: 45vw;
+        left: 56.6vw;
+    }
+    .ContentNavigation {
+        right: -200px;
     }
 
     .div5 {
@@ -510,7 +522,7 @@ h1:hover, h2:hover, h3:hover {
 
 /*endregion*/
 
-/*region Mobile WIP*/
+/*region Mobile-Only WIP*/
 
 @media all and (max-device-width: 1280px) and (orientation: landscape) {
     h1 {
@@ -526,18 +538,6 @@ h1:hover, h2:hover, h3:hover {
 
     body {
         background-clip: padding-box;
-    }
-
-    .div4 {
-        left: 5vw;
-    }
-
-    .div3 {
-        left: 20vw;
-    }
-
-    .div6 {
-        left: 35vw;
     }
 
     .div5 {
