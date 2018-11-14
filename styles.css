@@ -42,10 +42,9 @@ p {
 }
 
 h1 {
+    font-weight: 300;
     width: auto;
     font-size: 36px;
-    font-family: "Verdana", Times, sans-serif;
-    font-weight: normal;
     background-color: grey;
     margin: 0 0 0 0;
 }
@@ -237,12 +236,13 @@ h1:hover, h2:hover, h3:hover {
     text-align: left;
     font-size: 26px;
     position: fixed;
-    top: 50px;
+    top: 65px;
     left: 250px;
     overflow: scroll;
     width: 65vw;
     height: 88vh;
-
+    background-color: RGBA(50, 50, 50, 0.3);
+    border: solid black 1px;
 }
 
 .GalleryCard {
@@ -250,6 +250,7 @@ h1:hover, h2:hover, h3:hover {
     padding-left: 2.5vw;
     margin-bottom: 10vh;
     width: 60vw;
+    flex-basis: 20em;
 }
 
 .CardHeader {
@@ -263,14 +264,16 @@ h1:hover, h2:hover, h3:hover {
     text-align: left;
     font-size: 26px;
     position: fixed;
-    border: 5px solid;
-    top: 50px;
+    background-color: RGBA(50, 50, 50, 0.3);
+    top: 65px;
     left: 250px;
     overflow: scroll;
     height: auto;
     min-height: 30px;
     max-height: 80vh;
     max-width: 60vw;
+    flex-basis: 20em;
+    border: solid black 1px;
 }
 
 .div8 {
@@ -326,21 +329,9 @@ h1:hover, h2:hover, h3:hover {
 
 /*region Desktop*/
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 550px) {
     body {
         background-clip: padding-box;
-    }
-
-    .div4 {
-        left: 15vw;
-    }
-
-    .div3 {
-        left: 30vw;
-    }
-
-    .div6 {
-        left: 45vw;
     }
 
     .div5 {
@@ -351,28 +342,23 @@ h1:hover, h2:hover, h3:hover {
 
         -webkit-animation-name: DropDown;
     }
-
     .MainAnchor {
-        width: 100px;
-
-    }
-
-    .MainContent {
-        left: 150px;
-    }
-
+    left:-500px;
+}
     .div1 {
-        left: 100px;
-        top: 0;
+        top:0;
+        left: 0;
+        flex-basis: 252px;
     }
-
-    h1 {
-        font-size: 26px;
+    .GalleryContent {
+        left: 17.5vw
     }
-
+    .MainContent {
+        left: 17.5vw
+    }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (min-width: 551px) and (max-width: 950px) {
     body {
         background-clip: padding-box;
     }
