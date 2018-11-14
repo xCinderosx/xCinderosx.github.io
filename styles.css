@@ -419,49 +419,6 @@ h1:hover, h2:hover, h3:hover {
 /*region Mobile*/
 
 @media only screen and (max-device-width: 1280px) and (orientation: landscape) {
-    .MainAnchor {
-        min-height: 100vw;
-    }
-}
-
-@media only screen and (max-device-width: 950px) and (orientation: portrait) {
-
-    p {
-        font-size: 24px;
-    }
-
-    body {
-        background-clip: padding-box;
-    }
-
-    .div4 {
-        left: 5vw;
-    }
-
-    .div3 {
-        left: 20vw;
-    }
-
-    .div6 {
-        left: 35vw;
-    }
-
-    .div5 {
-        -webkit-animation-name: DropUp;
-    }
-
-    .div5:hover {
-
-        -webkit-animation-name: DropDown;
-    }
-
-    .MainAnchor {
-        width: 320px;
-    }
-
-    h1 {
-        font-size: 26px;
-    }
 
 }
 
