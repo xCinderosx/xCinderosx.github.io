@@ -501,7 +501,9 @@ h1:hover, h2:hover, h3:hover {
 /*region Mobile WIP*/
 
 @media all and (max-device-width: 1280px) and (orientation: landscape) {
-
+    h1 {
+        font-size: 22px;
+    }
 }
 
 @media all and (max-device-width: 950px) and (orientation: portrait) {
@@ -541,7 +543,7 @@ h1:hover, h2:hover, h3:hover {
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
 }
