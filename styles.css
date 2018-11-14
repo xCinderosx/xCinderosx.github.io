@@ -309,9 +309,7 @@ h1:hover, h2:hover, h3:hover {
 }
 
 
-.ContentNavigation:hover {
-    right: -50px;
-}
+
 
 .NavigationMarker {
     color: white;
@@ -379,11 +377,6 @@ h1:hover, h2:hover, h3:hover {
 
 /*region Desktop*/
 
-@media (min-width: 551px) and (max-width: 1160px) {
-    .ContentNavigation {
-        right: -200px;
-    }
-}
 
 @media only screen and (max-width: 550px) {
     body {
@@ -404,7 +397,13 @@ h1:hover, h2:hover, h3:hover {
     }
 
     .ContentNavigation {
-        right: -250px;
+        transform: scale(0.34);
+        width: 400px;
+        right: -240px;
+    }
+
+    .ContentNavigation:hover {
+        right: -150px;
     }
 
     .div1 {
@@ -421,6 +420,16 @@ h1:hover, h2:hover, h3:hover {
     .MainContent {
         width: 90vw;
         left: 5vw;
+    }
+}
+
+@media all and (min-width: 551px) and (max-width: 1160px) {
+    .ContentNavigation {
+        right: -200px;
+    }
+
+    .ContentNavigation:hover {
+        right: -50px;
     }
 }
 
@@ -489,13 +498,13 @@ h1:hover, h2:hover, h3:hover {
 
 /*endregion*/
 
-/*region Mobile*/
+/*region Mobile WIP*/
 
-@media only screen and (max-device-width: 1280px) and (orientation: landscape) {
+@media all and (max-device-width: 1280px) and (orientation: landscape) {
 
 }
 
-@media only screen and (max-device-width: 950px) and (orientation: portrait) {
+@media all and (max-device-width: 950px) and (orientation: portrait) {
 
     p {
         font-size: 24px;
