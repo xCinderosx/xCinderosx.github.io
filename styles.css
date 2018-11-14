@@ -496,12 +496,8 @@ h1:hover, h2:hover, h3:hover {
         -webkit-animation-name: DropDown;
     }
 
-    .MainAnchor {
-        width: 320px;
-    }
-
     .div1 {
-        left: 320px;
+        left: 0px;
         top: 0;
     }
 
