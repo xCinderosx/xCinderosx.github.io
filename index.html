@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="dist/css/flag-icon.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,8 +23,8 @@
     <div class="div4" id='gallery' onclick="location.href='gallery.html'">
         <div class="div5">Gallery</div>
     </div>
-    <div class="div6" id='acc'>
-        <div class="div5">Account</div>
+    <div class="div6" id='CV'>
+        <div class="div5">CV</div>
     </div>
 </div>
 
@@ -43,6 +44,12 @@
     </div>
     <a role="button" class="btn btn-primary btn-sm" href="mailto:kasprzakprzemyslaw417@gmail.com">Contact me!</a>
     <br><br>
+    <div>
+        <select class="selectpicker" data-width="fit">
+            <option data-content='<span class="fa fa-language" aria-hidden="true"></span> English'>English</option>
+            <option  data-content='<span class="flag-icon flag-icon-pl"></span>'>Polski</option>
+        </select>
+    </div>
 </div>
 
 <!-- Content -->
@@ -219,10 +226,8 @@
 </div>
 
 
-<!-- Footer -->
-<div class="div7">
-    Przemysław Kasprzak CDV
-</div>
+<!-- footer -->
+
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -235,7 +240,11 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 <script>
-    $('#Content').scrollspy({target: '#navbar'})
+    $('#Content').scrollspy({target: '#navbar'});
+
+    $(function(){
+        $('.selectpicker').selectpicker();
+    });
 </script>
 </body>
 

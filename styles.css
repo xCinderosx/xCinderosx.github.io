@@ -1,12 +1,12 @@
 /*region Essentials*/
 body {
-    background-image: url("tlo1.jpg");
+    background-image: linear-gradient(#0d647c, #e9eebd);
     background-size: auto;
     position: absolute;
     width: 100%;
     height: 100%;
     margin: 0 0 33px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -25,6 +25,7 @@ body {
 .LeftMenu {
     position: relative;
     top: 0;
+    overflow: scroll;
 }
 
 .MainAnchor {
@@ -187,15 +188,15 @@ h1:hover, h2:hover, h3:hover {
     background-color: white;
 }
 
-.div7 {
-    height: 15px;
-    width: 100%;
+.selectpicker {
+    height: 30px;
+    width: 70%;
+    margin: 10px;
     font-family: "Verdana", Times, sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 10px;
-    position: fixed;
     border-style: none;
-    background: rgba(100, 100, 100, 1) repeat-x;
+    background: white;
     -webkit-align-content: center;
     align-content: center;
     text-align: center;
@@ -236,7 +237,7 @@ h1:hover, h2:hover, h3:hover {
 /*region Content*/
 
 .GalleryContent {
-    color: black;
+    color: white;
     text-justify: kashida;
     text-align: left;
     font-size: 26px;
@@ -251,10 +252,10 @@ h1:hover, h2:hover, h3:hover {
 }
 
 .GalleryCard {
-    height: 25vh;
+    height: 35vh;
     padding-left: 2.5vw;
-    margin-bottom: 10vh;
-    width: 60vw;
+    margin-bottom: 20vh;
+    width: 96.5%;
     flex-basis: 20em;
 }
 
@@ -455,7 +456,7 @@ h1:hover, h2:hover, h3:hover {
     }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 950px) {
+@media only screen and (min-width: 550px) and (max-width: 952px) {
     body {
         background-clip: padding-box;
         font-size: 1.2em;
@@ -512,9 +513,10 @@ h1:hover, h2:hover, h3:hover {
 
 }
 
-@media (max-height: 400px) {
+@media (max-height: 600px) {
     .GalleryCard {
         height: 50vh;
+        margin-bottom: 25vh;
     }
     .ContentNavigation {
     }
