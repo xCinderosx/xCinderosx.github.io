@@ -222,6 +222,8 @@ h4 {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+
+
 /*endregion*/
 
 /*region Content*/
@@ -554,6 +556,8 @@ h4 {
 
 /*endregion*/
 
+
+
 /*endregion*/
 
 /*region KeyframesAnimations*/
@@ -687,7 +691,7 @@ h4 {
     width: 100%;
     height: auto;
     color: white;
-    padding-top: 34px;
+    padding-top: 27px;
     padding-bottom: 34px;
 }
 
@@ -751,6 +755,7 @@ h4 {
     transition: 0.5s;
     overflow-y: scroll;
     text-align: center;
+    font-size: 16px;
 }
 
 .hoveringParagraph span {
@@ -760,7 +765,7 @@ h4 {
 }
 
 .hoveringParagraph:hover {
-    background-color: rgba(50, 50, 50, 0.8);
+    background-color: rgba(13, 32, 48, 0.95);
     visibility: visible;
 }
 .hoveringParagraph:hover span {
@@ -768,11 +773,84 @@ h4 {
 }
 
 .hoveringParagraph h1 {
-    margin-top:30px;
-}
-.hoveringParagraph p {
     margin-top:20px;
 }
+.hoveringParagraph p {
+    margin-top:10px;
+}
+
+.label1 {
+    font-size: 16px;
+    color: #e9eebd;
+}
+
+.pageIcon link {
+    position: absolute;
+    font-weight: 400;
+    background: url("Content/webicon.png")  no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    left:10px;
+    float: left;
+    display:inline-block;
+}
+
+.footer1{
+
+    text-align: center;
+}
+
+
+
+.footerComponent {
+    bottom: 100px;
+
+}
+
+.paragraphF {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 50px;
+    color: #e9eebd;
+    align-content: center;
+}
+
+.artstation {
+    position: absolute;
+    background: url("Content/ArtStation1icon.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    float: left;
+    background-size: contain;
+    margin-left: 25%;
+    left:-15px;
+}
+
+.github {
+    position: absolute;
+    background: url("Content/githubIcon.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    float: left;
+    background-size: contain;
+    margin-left: 50%;
+    left:-15px;
+}
+
+.twitter {
+    position: absolute;
+    background: url("Content/githubIcon.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    float: left;
+    background-size: contain;
+    margin-left: 75%;
+    left:-15px;
+}
+
 .basic2 {
     height: 88.4vh;
     width: 90%;
