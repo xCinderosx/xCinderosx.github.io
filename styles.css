@@ -649,5 +649,29 @@ h1:hover, h2:hover, h3:hover {
     top: 0;
     width: 20%;
     height: 100%;
+    text-align: center;
+}
+
+.avatar{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.MainMenu h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-top: 28px;
+    text-align: center;
+}
+.MainMenu p {
+    font-size: 15px;
+    color: #659c96;
+    margin-top: 16px;
+    text-align: center;
+    text-transform: uppercase;
 }
 /*endregion*/
