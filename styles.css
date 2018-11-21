@@ -790,6 +790,8 @@ h4 {
     overflow-y: scroll;
 }
 
+.boardBodyLabel
+
 .newCard {
     max-width: 1082px;
     height: auto;
