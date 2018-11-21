@@ -650,6 +650,7 @@ h4 {
     align-items:  flex-start;
     float: left;
     -webkit-box-flex: 1;
+    overflow-y: scroll;
 }
 
 .avatar {
@@ -747,6 +748,7 @@ h4 {
     margin-top: 0;
     float: left;
     position: relative;
+    overflow-y: scroll;
 }
 
 .newCard {
@@ -784,19 +786,30 @@ h4 {
 }
 
 .hoveringParagraph h1 {
-    height: 30%;
-    padding-top: 10%;
+    height: 20%;
+    font-size: 1.8rem;
+    padding-top: 6%;
     text-align: center;
+    float: bottom;
+}
+.hoveringParagraph h2 {
+    position: relative;
+    height: 10%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 3px;
+    color: #e9eebd;
+    float: bottom;
 }
 .hoveringParagraph p {
-    margin-top:10px;
-    margin-left: 15%;
-    margin-right: 15%;
+    font-size: 0.8rem;
+    font-weight: 300;
+    float: bottom;
+    margin: 3px 15% 0;
 }
 
 .label1 {
-    font-size: 16px;
-    color: #e9eebd;
+
 }
 
 .pageIcon link {
@@ -898,4 +911,39 @@ h4 {
     .boardHeader h1 {
         margin-top: -30px;
     }
+}
+
+@media (max-width: 575.98px) {
+
+    .hoveringParagraph h1 {
+        font-size: 1.2rem;
+    }
+
+    .hoveringParagraph p {
+        font-size: 0.6rem;
+    }
+
+    .hoveringParagraph h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }
