@@ -7,6 +7,21 @@ body {
     overflow: hidden;
 }
 
+body:before {/* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+    overflow-wrap: normal;
+}
+
+* {margin:0;padding:0;}
+
+#wrap {
+    min-height: 100%;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -289,7 +304,6 @@ h4 {
     width: 100%;
     height: 100%;
     background-color: RGBA(50, 50, 50, 0.3);
-
     border: solid black 1px;
 }
 
@@ -651,6 +665,8 @@ h4 {
     float: left;
     -webkit-box-flex: 1;
     overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 100px;
 }
 
 .avatar {
@@ -805,7 +821,10 @@ h4 {
     font-size: 0.8rem;
     font-weight: 300;
     float: bottom;
-    margin: 3px 15% 0;
+    margin-top: 3px;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 8.2%;
 }
 
 .label1 {
@@ -831,11 +850,14 @@ h4 {
 
 .footer1{
     width: 100%;
-    float: bottom;
+    float: left;
     text-align: center;
-    height: 1px;
+    height: 100px;
     position: relative;
-
+    margin-top: -100px;
+    clear:both;
+    top:calc(50% - 150px);
+    overflow: scroll;
 }
 
 
@@ -843,7 +865,6 @@ h4 {
 .footerComponent {
     bottom: 0;
     float: left;
-
 }
 
 .paragraphF {
@@ -857,6 +878,8 @@ h4 {
     margin-top: 10px;
     padding-left: 16%;
     padding-right: 16%;
+
+    top:50px;
 }
 
 .artstation {
@@ -868,6 +891,8 @@ h4 {
     background-size: contain;
     margin-left: 25%;
     left:-15px;
+    top:0;
+    cursor: pointer;
 }
 
 .github {
@@ -879,17 +904,21 @@ h4 {
     background-size: contain;
     margin-left: 50%;
     left:-15px;
+    top:0;
+    cursor: pointer;
 }
 
 .twitter {
     position: absolute;
-    background: url("Content/githubIcon.png") no-repeat;
+    background: url("Content/twitterIcon — kopia.png") no-repeat;
     height: 30px;
     width: 30px;
     float: left;
     background-size: contain;
     margin-left: 75%;
     left:-15px;
+    top:0;
+    cursor: pointer;
 }
 
 .basic2 {
@@ -913,7 +942,11 @@ h4 {
     }
 }
 
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
+
+    .boardHeader h1 {
+        margin-top: -5px;
+    }
 
     .hoveringParagraph h1 {
         font-size: 1.2rem;
@@ -924,26 +957,30 @@ h4 {
     }
 
     .hoveringParagraph h2 {
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .basic {
+        padding: 10px;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
 
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
 }
