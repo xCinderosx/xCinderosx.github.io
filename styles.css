@@ -668,6 +668,7 @@ h4 {
     overflow-x: hidden;
     padding-bottom: 100px;
     z-index: 999;
+    transition: 0.2s;
 }
 
 .avatar {
@@ -759,6 +760,9 @@ h4 {
     float: right;
     width: 80%;
     height: 100%;
+    transition: 0.2s;
+    position: absolute;
+    left: 20%;
 }
 
 .basic {
@@ -770,7 +774,7 @@ h4 {
 
 .board {
 
-    transition: 1.4s;
+    transition: 2s;
 }
 
 .index {
@@ -780,6 +784,23 @@ h4 {
 .gallery {
     position: sticky;
     padding-top: 50px;
+}
+
+.aboutme {
+    position: sticky;
+    padding-top: 100px;
+}
+
+.gallerycontainer {
+    width: 100%;
+    height: 85%;
+}
+
+.textwall {
+    background-color: RGBA(1, 1, 1, 0.6);
+
+    width: 100%;
+    height: 90%;
 }
 
 .activeBoard {
@@ -810,13 +831,6 @@ h4 {
     overflow-y: scroll;
 }
 
-.boardBodyLabel
-
-.newCard {
-    max-width: 1082px;
-    height: auto;
-    background: url("Content/60-Parsecs_promo_cosmos_ICON.jpg") no-repeat;
-}
 
 .hoveringParagraph {
     position: absolute;
@@ -830,6 +844,7 @@ h4 {
     overflow-y: scroll;
     text-align: center;
     font-size: 16px;
+    line-height: 0.5;
 }
 
 .hoveringParagraph span {
@@ -863,15 +878,18 @@ h4 {
     float: bottom;
 }
 .hoveringParagraph p {
-    font-size: 1rem;
+        font-size: 1.1rem;
     font-weight: 400;
     float: bottom;
-    text-align: left;
-    line-height: 1.5;
-    margin-top: 3px;
-    margin-right: 15%;
-    margin-left: 15%;
-    margin-bottom: 8.2%;
+    text-align: center;
+    line-height: 1.4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .label1 {
@@ -975,6 +993,60 @@ h4 {
     margin: 5.8vh 5%;
 }
 
+.menumobile {
+    height: 10%;
+    width: 100%;
+    top: -10%;
+    color: white;
+    background-color: RGBA(1, 1, 1, 0.8);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    align-content: normal;
+    align-items:  center;
+    float: left;
+    -webkit-box-flex: 1;
+    overflow-x: hidden;
+    transition: 0.2s;
+    z-index: 999;
+    line-height: 100%;
+}
+
+.mobileHome{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 75%;
+
+}
+
+.mobileGallery{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    top: 75%;
+}
+
+.mobileAboutme{
+
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    vertical-align: middle;
+    left: 75%;
+
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 75%;
+}
+
 /*endregion*/
 
 @media screen and (max-height: 750px) {
@@ -989,6 +1061,7 @@ h4 {
     }
 }
 
+/* Small devices (portrait phones, to 576px) */
 @media screen and (max-width: 575.98px) {
 
     .boardHeader h1 {
@@ -1008,13 +1081,39 @@ h4 {
     }
 
     .basic {
+
         padding: 10px;
+    }
+
+    .MainMenu {
+        left: -95%;
+    }
+
+    .MainContainer {
+        top: 10%;
+        left: 0;
+        width: 100%;
+    }
+
+    .menumobile {
+        top: 0;
+    }
+
+    .gallery {
+        padding-top: 0;
+    }
+
+    .aboutme {
+        margin-top: -150px;
+        height: 95%;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-
+.MainMenu h1 {
+    font-size: 20px;
+}
 }
 
 /* Medium devices (tablets, 768px and up)*/
