@@ -804,9 +804,13 @@ h4 {
 
 .textwall {
     background-color: RGBA(1, 1, 1, 0.6);
-
+    text-align: center;
     width: 100%;
     height: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-justify: inter-word;
+    overflow: scroll;
 }
 
 .activeBoard {
