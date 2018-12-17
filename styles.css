@@ -5,6 +5,12 @@ body {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
+
+}
+
+html {
+
+    overflow: hidden;
 }
 
 body:before {/* thanks to Maleika (Kohoutec)*/
