@@ -44,6 +44,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 .LeftMenu {
     position: relative;
     top: 0;
+    mso-page-scale: 0.75;
     overflow: scroll;
 }
 
