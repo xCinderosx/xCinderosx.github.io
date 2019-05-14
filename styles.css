@@ -685,7 +685,9 @@ h4 {
     width: 110px;
     margin-top: 70px;
     overflow: hidden;
-    background-image: url('example1.gif');
+    background-image: url('Content/imageedit_2_3712248038.png');
+    background-position: center;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
 }
@@ -710,7 +712,7 @@ h4 {
 }
 
 .Navigator1 {
-    margin-top: 120px;
+    margin-top: 20px;
     padding: 0 0 0 0;
     cursor: pointer;
     float: bottom;
