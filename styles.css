@@ -93,6 +93,7 @@ h3 {
 
 h4 {
     text-align: center;
+    font-size: 4rem;
 }
 
 .div1 {
@@ -1127,19 +1128,30 @@ h4 {
 .MainMenu h1 {
     font-size: 20px;
 }
+    .MenuPill {
+        font-size: 1rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-
+    .MenuPill {
+        font-size: 1rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-
+    .MenuPill {
+        font-size: 2rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
+.MenuPill {
+    font-size: 4rem;
+}
 
 }
+
