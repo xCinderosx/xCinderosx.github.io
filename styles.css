@@ -69,7 +69,7 @@ p {
 h1 {
     font-weight: 300;
     width: auto;
-    font-size: 22px;
+    font-size: 1rem;
     margin: 0 0 0 0;
 }
 
@@ -724,8 +724,8 @@ h4 {
     width: 100%;
     height: auto;
     color: white;
-    padding-top: 27px;
-    padding-bottom: 34px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 .MenuPill:hover {
@@ -1143,15 +1143,41 @@ h4 {
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
     .MenuPill {
-        font-size: 2rem;
+        font-size: 0.8rem;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
 .MenuPill {
-    font-size: 4rem;
-}
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 
 }
+.h1 {
+    font-size: 1rem;
+}
+
+.sss{
+
+}
+
+
+@media screen and (min-height: 1081px){
+.MenuPill {
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.h1 {
+    font-size: 3rem;
+}
+.sss {
+        font-size: 2rem;
+}
+
+    }
+}
+
 
